@@ -1,0 +1,33 @@
+{
+  "name": "multilayer-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "genex": {
+    "matchmaking": {
+      "preset": "duel",
+      "winCondition": "lastStanding",
+      "config": {
+        "countdownMs": 3000,
+        "maxRoundMs": 180000
+      }
+    }
+  },
+  "devDependencies": {
+    "@genex-ai/cli-demo": "^0.16.0",
+    "@types/three": "^0.185.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  },
+  "dependencies": {
+    "@genex-ai/embed-sdk": "^0.4.0",
+    "@genex-ai/multiplayer": "^0.7.0",
+    "@sentry/browser": "^10.63.0",
+    "three": "^0.185.0"
+  }
+}
