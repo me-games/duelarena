@@ -158,7 +158,7 @@ async function startMatchmaking() {
     const { user } = await waitForPlayer();
     playerName = user.name;
     matchmaking = await matchmake<DuelState>({
-      url: GENEX.colyseusUrl,
+      urls: [GENEX.colyseusUrl],
       room: GENEX.slug,
       name: user.name,
       auth: () => getColyseusAuth(),

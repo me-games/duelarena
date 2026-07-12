@@ -7,7 +7,7 @@
 //                              gitignored via *.local, never committed)
 export const GENEX = {
   slug: import.meta.env.VITE_GENEX_SLUG as string,
-  apiUrl: (import.meta.env.VITE_GENEX_API_URL as string | undefined) ?? "https://demo-api.glotech.world",
-  colyseusUrl: (import.meta.env.VITE_GENEX_COLYSEUS_URL as string | undefined) ?? "wss://demo-colyseus.glotech.world",
-  dashboardOrigins: ((import.meta.env.VITE_GENEX_DASHBOARD_ORIGINS as string | undefined) ?? "https://demo-web.glotech.world").split(","),
+  apiUrl: (import.meta.env.VITE_GENEX_API_URL as string | undefined) ?? "https://api-dev.genex.games",
+  colyseusUrl: (import.meta.env.VITE_GENEX_COLYSEUS_URL as string | undefined) ?? "wss://relay-dev.genex.games",
+  dashboardOrigins: ((import.meta.env.VITE_GENEX_DASHBOARD_ORIGINS as string | undefined) ?? "https://dev.genex.games").split(","),
 } as const;
